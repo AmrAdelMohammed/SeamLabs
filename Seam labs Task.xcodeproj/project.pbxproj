@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2469E02AA66A2B00A415AA /* DecodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469DC2AA66A2B00A415AA /* DecodingService.swift */; };
+		3F2469E12AA66A2B00A415AA /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469DD2AA66A2B00A415AA /* APIError.swift */; };
+		3F2469E22AA66A2B00A415AA /* NewsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469DE2AA66A2B00A415AA /* NewsGateway.swift */; };
+		3F2469E32AA66A2B00A415AA /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469DF2AA66A2B00A415AA /* APIManager.swift */; };
+		3F2469E62AA66B3A00A415AA /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469E52AA66B3A00A415AA /* NewsModel.swift */; };
+		3F2469E92AA66F3A00A415AA /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469E82AA66F3A00A415AA /* HomeVM.swift */; };
+		3F2469EB2AA670A200A415AA /* HomeDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2469EA2AA670A200A415AA /* HomeDataSourceProtocol.swift */; };
 		3F9F8F852AA5DE6900F36167 /* Seam_labs_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F842AA5DE6900F36167 /* Seam_labs_TaskApp.swift */; };
-		3F9F8F872AA5DE6900F36167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F862AA5DE6900F36167 /* ContentView.swift */; };
+		3F9F8F872AA5DE6900F36167 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F862AA5DE6900F36167 /* HomeView.swift */; };
 		3F9F8F892AA5DE6A00F36167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F8F882AA5DE6A00F36167 /* Assets.xcassets */; };
 		3F9F8F8C2AA5DE6A00F36167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F8F8B2AA5DE6A00F36167 /* Preview Assets.xcassets */; };
 		3F9F8F8E2AA5DE6A00F36167 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F8D2AA5DE6A00F36167 /* Persistence.swift */; };
@@ -36,9 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2469DC2AA66A2B00A415AA /* DecodingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingService.swift; sourceTree = "<group>"; };
+		3F2469DD2AA66A2B00A415AA /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3F2469DE2AA66A2B00A415AA /* NewsGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsGateway.swift; sourceTree = "<group>"; };
+		3F2469DF2AA66A2B00A415AA /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3F2469E52AA66B3A00A415AA /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		3F2469E82AA66F3A00A415AA /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		3F2469EA2AA670A200A415AA /* HomeDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSourceProtocol.swift; sourceTree = "<group>"; };
 		3F9F8F812AA5DE6900F36167 /* Seam labs Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seam labs Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9F8F842AA5DE6900F36167 /* Seam_labs_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seam_labs_TaskApp.swift; sourceTree = "<group>"; };
-		3F9F8F862AA5DE6900F36167 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F9F8F862AA5DE6900F36167 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F9F8F882AA5DE6A00F36167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9F8F8B2AA5DE6A00F36167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F9F8F8D2AA5DE6A00F36167 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -75,6 +89,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2469DB2AA669E400A415AA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3F2469DD2AA66A2B00A415AA /* APIError.swift */,
+				3F2469DF2AA66A2B00A415AA /* APIManager.swift */,
+				3F2469DC2AA66A2B00A415AA /* DecodingService.swift */,
+				3F2469DE2AA66A2B00A415AA /* NewsGateway.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3F2469E42AA66B1E00A415AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F2469E52AA66B3A00A415AA /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F2469E72AA66F0E00A415AA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F8F862AA5DE6900F36167 /* HomeView.swift */,
+				3F2469E82AA66F3A00A415AA /* HomeVM.swift */,
+				3F2469EA2AA670A200A415AA /* HomeDataSourceProtocol.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		3F9F8F782AA5DE6900F36167 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +141,10 @@
 		3F9F8F832AA5DE6900F36167 /* Seam labs Task */ = {
 			isa = PBXGroup;
 			children = (
+				3F2469E42AA66B1E00A415AA /* Model */,
+				3F2469DB2AA669E400A415AA /* Network */,
 				3F9F8F842AA5DE6900F36167 /* Seam_labs_TaskApp.swift */,
-				3F9F8F862AA5DE6900F36167 /* ContentView.swift */,
+				3F2469E72AA66F0E00A415AA /* Home */,
 				3F9F8F882AA5DE6A00F36167 /* Assets.xcassets */,
 				3F9F8F8D2AA5DE6A00F36167 /* Persistence.swift */,
 				3F9F8F8F2AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld */,
@@ -263,10 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2469E32AA66A2B00A415AA /* APIManager.swift in Sources */,
+				3F2469E92AA66F3A00A415AA /* HomeVM.swift in Sources */,
 				3F9F8F912AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld in Sources */,
 				3F9F8F8E2AA5DE6A00F36167 /* Persistence.swift in Sources */,
-				3F9F8F872AA5DE6900F36167 /* ContentView.swift in Sources */,
+				3F2469E62AA66B3A00A415AA /* NewsModel.swift in Sources */,
+				3F2469E02AA66A2B00A415AA /* DecodingService.swift in Sources */,
+				3F9F8F872AA5DE6900F36167 /* HomeView.swift in Sources */,
+				3F2469E22AA66A2B00A415AA /* NewsGateway.swift in Sources */,
+				3F2469EB2AA670A200A415AA /* HomeDataSourceProtocol.swift in Sources */,
 				3F9F8F852AA5DE6900F36167 /* Seam_labs_TaskApp.swift in Sources */,
+				3F2469E12AA66A2B00A415AA /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
