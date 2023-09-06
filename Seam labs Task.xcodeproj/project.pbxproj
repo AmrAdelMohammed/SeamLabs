@@ -18,11 +18,15 @@
 		3F9F8F872AA5DE6900F36167 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F862AA5DE6900F36167 /* HomeView.swift */; };
 		3F9F8F892AA5DE6A00F36167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F8F882AA5DE6A00F36167 /* Assets.xcassets */; };
 		3F9F8F8C2AA5DE6A00F36167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F8F8B2AA5DE6A00F36167 /* Preview Assets.xcassets */; };
-		3F9F8F8E2AA5DE6A00F36167 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F8D2AA5DE6A00F36167 /* Persistence.swift */; };
-		3F9F8F912AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F8F2AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld */; };
+		3F9F8F912AA5DE6A00F36167 /* NewsEntites.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F8F2AA5DE6A00F36167 /* NewsEntites.xcdatamodeld */; };
 		3F9F8F9B2AA5DE6B00F36167 /* Seam_labs_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8F9A2AA5DE6B00F36167 /* Seam_labs_TaskTests.swift */; };
 		3F9F8FA52AA5DE6B00F36167 /* Seam_labs_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8FA42AA5DE6B00F36167 /* Seam_labs_TaskUITests.swift */; };
 		3F9F8FA72AA5DE6B00F36167 /* Seam_labs_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F8FA62AA5DE6B00F36167 /* Seam_labs_TaskUITestsLaunchTests.swift */; };
+		3FE512A92AA7A9FB00905CA3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE512A82AA7A9FA00905CA3 /* DatabaseManager.swift */; };
+		3FE512AB2AA7B0B600905CA3 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE512AA2AA7B0B600905CA3 /* CoreDataStackManager.swift */; };
+		3FE512AD2AA7B1FD00905CA3 /* HomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE512AC2AA7B1FD00905CA3 /* HomeLocalDataSource.swift */; };
+		3FE512AF2AA7B2BF00905CA3 /* NewEntities+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE512AE2AA7B2BF00905CA3 /* NewEntities+CoreDataClass.swift */; };
+		3FE512B12AA7B46900905CA3 /* NewsEntities+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE512B02AA7B46900905CA3 /* NewsEntities+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +59,17 @@
 		3F9F8F862AA5DE6900F36167 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F9F8F882AA5DE6A00F36167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9F8F8B2AA5DE6A00F36167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3F9F8F8D2AA5DE6A00F36167 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3F9F8F902AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Seam_labs_Task.xcdatamodel; sourceTree = "<group>"; };
 		3F9F8F962AA5DE6B00F36167 /* Seam labs TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seam labs TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9F8F9A2AA5DE6B00F36167 /* Seam_labs_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seam_labs_TaskTests.swift; sourceTree = "<group>"; };
 		3F9F8FA02AA5DE6B00F36167 /* Seam labs TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seam labs TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9F8FA42AA5DE6B00F36167 /* Seam_labs_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seam_labs_TaskUITests.swift; sourceTree = "<group>"; };
 		3F9F8FA62AA5DE6B00F36167 /* Seam_labs_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seam_labs_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FE512A82AA7A9FA00905CA3 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		3FE512AA2AA7B0B600905CA3 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		3FE512AC2AA7B1FD00905CA3 /* HomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataSource.swift; sourceTree = "<group>"; };
+		3FE512AE2AA7B2BF00905CA3 /* NewEntities+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewEntities+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FE512B02AA7B46900905CA3 /* NewsEntities+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsEntities+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,13 +149,13 @@
 		3F9F8F832AA5DE6900F36167 /* Seam labs Task */ = {
 			isa = PBXGroup;
 			children = (
+				3FE512A72AA7A9B700905CA3 /* LocalDB */,
 				3F2469E42AA66B1E00A415AA /* Model */,
 				3F2469DB2AA669E400A415AA /* Network */,
 				3F9F8F842AA5DE6900F36167 /* Seam_labs_TaskApp.swift */,
 				3F2469E72AA66F0E00A415AA /* Home */,
 				3F9F8F882AA5DE6A00F36167 /* Assets.xcassets */,
-				3F9F8F8D2AA5DE6A00F36167 /* Persistence.swift */,
-				3F9F8F8F2AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld */,
+				3F9F8F8F2AA5DE6A00F36167 /* NewsEntites.xcdatamodeld */,
 				3F9F8F8A2AA5DE6A00F36167 /* Preview Content */,
 			);
 			path = "Seam labs Task";
@@ -176,6 +184,18 @@
 				3F9F8FA62AA5DE6B00F36167 /* Seam_labs_TaskUITestsLaunchTests.swift */,
 			);
 			path = "Seam labs TaskUITests";
+			sourceTree = "<group>";
+		};
+		3FE512A72AA7A9B700905CA3 /* LocalDB */ = {
+			isa = PBXGroup;
+			children = (
+				3FE512A82AA7A9FA00905CA3 /* DatabaseManager.swift */,
+				3FE512AA2AA7B0B600905CA3 /* CoreDataStackManager.swift */,
+				3FE512AC2AA7B1FD00905CA3 /* HomeLocalDataSource.swift */,
+				3FE512AE2AA7B2BF00905CA3 /* NewEntities+CoreDataClass.swift */,
+				3FE512B02AA7B46900905CA3 /* NewsEntities+CoreDataProperties.swift */,
+			);
+			path = LocalDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,14 +329,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2469E32AA66A2B00A415AA /* APIManager.swift in Sources */,
+				3FE512A92AA7A9FB00905CA3 /* DatabaseManager.swift in Sources */,
 				3F2469E92AA66F3A00A415AA /* HomeVM.swift in Sources */,
-				3F9F8F912AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld in Sources */,
-				3F9F8F8E2AA5DE6A00F36167 /* Persistence.swift in Sources */,
+				3F9F8F912AA5DE6A00F36167 /* NewsEntites.xcdatamodeld in Sources */,
 				3F2469E62AA66B3A00A415AA /* NewsModel.swift in Sources */,
+				3FE512AB2AA7B0B600905CA3 /* CoreDataStackManager.swift in Sources */,
 				3F2469E02AA66A2B00A415AA /* DecodingService.swift in Sources */,
+				3FE512B12AA7B46900905CA3 /* NewsEntities+CoreDataProperties.swift in Sources */,
 				3F9F8F872AA5DE6900F36167 /* HomeView.swift in Sources */,
 				3F2469E22AA66A2B00A415AA /* NewsGateway.swift in Sources */,
 				3F2469EB2AA670A200A415AA /* HomeDataSourceProtocol.swift in Sources */,
+				3FE512AD2AA7B1FD00905CA3 /* HomeLocalDataSource.swift in Sources */,
+				3FE512AF2AA7B2BF00905CA3 /* NewEntities+CoreDataClass.swift in Sources */,
 				3F9F8F852AA5DE6900F36167 /* Seam_labs_TaskApp.swift in Sources */,
 				3F2469E12AA66A2B00A415AA /* APIError.swift in Sources */,
 			);
@@ -645,13 +669,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3F9F8F8F2AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodeld */ = {
+		3F9F8F8F2AA5DE6A00F36167 /* NewsEntites.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3F9F8F902AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodel */,
 			);
 			currentVersion = 3F9F8F902AA5DE6A00F36167 /* Seam_labs_Task.xcdatamodel */;
-			path = Seam_labs_Task.xcdatamodeld;
+			path = NewsEntites.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

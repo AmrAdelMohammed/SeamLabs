@@ -9,4 +9,22 @@ import SwiftUI
 
 class HomeVM: ObservableObject{
     
+    private let homeDataSource: HomeDataSourceProtocol
+    @Published private(set) var NewsArray: [Article] = [Article]()
+    
+    
+    init(homeDataSource: HomeDataSourceProtocol = HomeDataSource()) {
+        self.homeDataSource = homeDataSource
+        Task{
+            await getNewEpisodes()
+        }
+    }
+    
+    private func getNewEpisodes() async {
+        let NewsArray = await homeDataSource.getNews() ?? []
+        DispatchQueue.main.async {
+            self.NewsArray = NewsArray
+        }
+    }
+    
 }
