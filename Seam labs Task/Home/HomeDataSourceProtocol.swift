@@ -24,14 +24,14 @@ class HomeDataSource: HomeDataSourceProtocol {
     
     func getNews() async -> [Article]? {
         let res = await homeGateway.getNews()
-//        switch res{
-//        case .success(let data):
-//            let news = data.articles ?? []
-//            self.localDataSource.deleteAllArticles()
-//            self.localDataSource.saveArticles(news)
-//            return news
-//        case .failure(_):
+        switch res{
+        case .success(let data):
+            let news = data.articles ?? []
+            self.localDataSource.deleteAllArticles()
+            self.localDataSource.saveArticles(news)
+            return news
+        case .failure(_):
             return  self.localDataSource.getNews()
-//        }
+        }
     }
 }

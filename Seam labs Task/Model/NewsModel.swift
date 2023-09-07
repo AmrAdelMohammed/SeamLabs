@@ -14,7 +14,8 @@ struct NewsModel: Codable {
 }
 
 // MARK: - Article
-struct Article: Codable {
+struct Article:Codable, Hashable, Identifiable {
+    var id: UUID? = UUID()
     var source: Source?
     var author: String?
     var title, description: String?
@@ -36,7 +37,7 @@ struct Article: Codable {
 }
 
 // MARK: - Source
-struct Source: Codable {
+struct Source:Codable, Hashable, Identifiable {
     var id: String?
     var name: String?
     

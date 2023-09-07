@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import CoreData
+import SDWebImage
+import SDWebImageSwiftUI
 
 struct HomeView: View {
     
@@ -17,7 +18,25 @@ struct HomeView: View {
     }
     
     var body: some View {
-        Text("")
+        ZStack{
+            Color(.clear)
+            NavigationStack{
+    //            ScrollView{
+                    List{
+                        ForEach(viewModel.NewsArray){news in
+
+                            NavigationLink(value: news){
+                                NewsCardView(article: news).padding(.bottom, 8)
+                            }
+
+                        }
+                        }.navigationDestination(for: Article.self) { item in
+                            DetailsView(article: item)
+                        
+                    }
+                }
+        }
+//        }
     }
   
 }
@@ -25,5 +44,30 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct NewsCardView: View {
+    
+    let article: Article
+    
+    var body: some View {
+        VStack{
+                        AnimatedImage(url: URL(string: article.urlToImage ?? ""))
+                            .resizable()
+                            .placeholder {
+                                Rectangle().foregroundColor(.gray)
+                            }.frame(width: 200, height: 200)
+                            .cornerRadius(10)
+                            .padding(.trailing, 8)
+            
+            VStack(alignment: .leading){
+                Text(article.title ?? "").font(.title).fontWeight(.medium)
+                Text(article.author ?? "").font(.system(size: 12))
+            }.padding()
+            
+            
+            
+        }
     }
 }

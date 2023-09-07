@@ -20,7 +20,7 @@ import Foundation
         }
 
         func getNews() async -> Result<NewsModel, Error> {
-            let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v2/everything?q=tesla&from=2023-08-04&sortBy=publishedAt&apiKey=94091ccab84f4a4dbe254299bb1ed23a")!)
+            let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v2/everything?q=Egypt&from=2023-09-06&sortBy=publishedAt&apiKey=94091ccab84f4a4dbe254299bb1ed23a")!)
             let res: Result<NewsModel, any Error> = await apiManager.request(urlRequest)
             return res
         }

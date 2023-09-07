@@ -16,11 +16,11 @@ class HomeVM: ObservableObject{
     init(homeDataSource: HomeDataSourceProtocol = HomeDataSource()) {
         self.homeDataSource = homeDataSource
         Task{
-            await getNewEpisodes()
+            await getNewArticles()
         }
     }
     
-    private func getNewEpisodes() async {
+    private func getNewArticles() async {
         let NewsArray = await homeDataSource.getNews() ?? []
         DispatchQueue.main.async {
             self.NewsArray = NewsArray
