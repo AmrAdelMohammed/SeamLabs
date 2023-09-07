@@ -33,7 +33,7 @@ struct DetailsView: View {
                     .padding()
                 
                 VStack(alignment: .leading){
-                    LabelView(text: "Auther \(article.author ?? "")")
+                    LabelView(text: "Auther: \(article.author ?? "")")
                     LabelView(text: "Published At: \(article.publishedAt ?? "")")
                     LabelView(text: article.description ?? "")
                     LabelView(text: article.content ?? "")
