@@ -35,7 +35,9 @@ struct HomeView: View {
                         
                     }
                 }
-        }
+        }.onAppear(perform: {
+            self.viewModel.viewDidAppear()
+        })
 //        }
     }
   

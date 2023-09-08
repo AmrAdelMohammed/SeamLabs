@@ -15,6 +15,10 @@ class HomeVM: ObservableObject{
     
     init(homeDataSource: HomeDataSourceProtocol = HomeDataSource()) {
         self.homeDataSource = homeDataSource
+        
+    }
+    
+    func viewDidAppear(){
         Task{
             await getNewArticles()
         }

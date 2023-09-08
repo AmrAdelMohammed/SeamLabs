@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Combine
 @testable import Seam_labs_Task
 
 final class Seam_labs_TaskTests: XCTestCase {
